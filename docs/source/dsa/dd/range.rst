@@ -181,6 +181,10 @@ Algorithms
 
 	- `Missing Number <https://leetcode.com/problems/missing-number/>`_
 	- `Find All Numbers Disappeared in an Array <https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/>`_
+	- `Find the Duplicate Number <https://leetcode.com/problems/find-the-duplicate-number/>`_
+#. Cycle detection: Floyd
+
+	- `Find the Duplicate Number <https://leetcode.com/problems/find-the-duplicate-number/>`_
 
 Fundamental Problems
 --------------------------------------------------------------------------------
