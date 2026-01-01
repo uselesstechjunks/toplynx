@@ -29,8 +29,7 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx_toolbox.collapse',
     'sphinx.ext.mathjax',
-    'sphinx.ext.autosectionlabel',
-	'sphinx-rtd-dark-mode'
+    'sphinx.ext.autosectionlabel'
 ]
 
 intersphinx_mapping = {
@@ -44,7 +43,7 @@ templates_path = ['_templates']
 # -- Options for HTML output
 # html_theme = 'sphinx_rtd_theme'
 # html_theme = 'python_docs_theme'
-html_theme = 'sphinx-rtd-dark-mode'
+html_theme = 'groundwork'
 html_sidebars = {
 	'**': ['globaltoc.html', 'sourcelink.html', 'searchbox.html'], 
 	'using/windows': ['windows-sidebar.html', 'searchbox.html'],
