@@ -2,8 +2,8 @@
 
 # -- Project information
 
-project = 'Machine Learning Interviews'
-copyright = '2022-2025, UselessTechJunks'
+project = 'Machine Learning Career Guide'
+copyright = '2022-2026, UselessTechJunks'
 author = 'Useless Tech Junks'
 
 release = '0.1'
@@ -41,8 +41,9 @@ intersphinx_disabled_domains = ['std']
 templates_path = ['_templates']
 
 # -- Options for HTML output
-#html_theme = 'sphinx_rtd_theme'
-html_theme = 'python_docs_theme'
+# html_theme = 'sphinx_rtd_theme'
+# html_theme = 'python_docs_theme'
+html_theme = 'groundwork'
 html_sidebars = {
 	'**': ['globaltoc.html', 'sourcelink.html', 'searchbox.html'], 
 	'using/windows': ['windows-sidebar.html', 'searchbox.html'],
