@@ -29,7 +29,8 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx_toolbox.collapse',
     'sphinx.ext.mathjax',
-    'sphinx.ext.autosectionlabel'
+    'sphinx.ext.autosectionlabel',
+	'sphinx-wagtail-theme'
 ]
 
 intersphinx_mapping = {
