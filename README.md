@@ -1,4 +1,3 @@
-Useless Tech Junks Notes
+TopLynx
 =======================================
-
-https://uselesstechjunks-leetcode.readthedocs.io/en/latest/index.html
+https://toplynx.readthedocs.io
