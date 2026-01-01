@@ -177,12 +177,20 @@ Algorithms
 
 #. Two-pointer methods for range problems in sorted data.
 #. Offline processing for batch queries using Mo's Algorithm or persistent data structures.
+#. Cycle sort
+
+	- `Missing Number <https://leetcode.com/problems/missing-number/>`_
+	- `Find All Numbers Disappeared in an Array <https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/>`_
+	- `Find the Duplicate Number <https://leetcode.com/problems/find-the-duplicate-number/>`_
+#. Cycle detection: Floyd
+
+	- `Find the Duplicate Number <https://leetcode.com/problems/find-the-duplicate-number/>`_
 
 Fundamental Problems
 --------------------------------------------------------------------------------
 MEX - Minimum Excluded Element
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#. Index gymnastics - `First missing positive in range [1,n] <https://leetcode.com/problems/first-missing-positive/>`_
+#. Cycle sort - `First missing positive in range [1,n] <https://leetcode.com/problems/first-missing-positive/>`_
 #. `Design data structure that pops smallest available numbers in infiite set with addback <https://leetcode.com/problems/smallest-number-in-infinite-set/>`_
 
 	.. collapse:: Implicit MEX
