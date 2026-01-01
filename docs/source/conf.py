@@ -2,8 +2,8 @@
 
 # -- Project information
 
-project = 'Machine Learning Interviews'
-copyright = '2022-2025, UselessTechJunks'
+project = 'Machine Learning Career Guide'
+copyright = '2022-2026, UselessTechJunks'
 author = 'Useless Tech Junks'
 
 release = '0.1'
