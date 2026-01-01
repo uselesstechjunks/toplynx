@@ -16,14 +16,13 @@ I use it to:
 
 It's written primarily for **future me**, and secondarily for friends who might find the material useful for learning or interview prep.
 
-Think of this as a **map and memory aid**, not a full course.
 =============================================================================================
 What this is not
 =============================================================================================
-- Not a journal or workspace for raw thinking
-- Not a dumping ground for half-baked notes or chat transcripts
+- Not a journal or workspace
+- Not a dumping ground for brainstorming or exploratory notes
 - Not a textbook (details and derivations live elsewhere)
-- Not a polished portfolio or blog
+- Not a portfolio or blog
 
 =============================================================================================
 How to read this
