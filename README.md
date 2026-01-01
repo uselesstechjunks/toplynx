@@ -1,4 +1,5 @@
 TopLynx
 ==============================================================================
-- stable: https://toplynx.readthedocs.io/en/latest/
-- builds: https://app.readthedocs.org/projects/toplynx/
+https://toplynx.readthedocs.io/en/latest/
+
+[![Documentation Status](https://readthedocs.org/projects/toplynx/badge/?version=latest)](https://toplynx.readthedocs.io/en/latest/)
