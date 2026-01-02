@@ -62,8 +62,6 @@ Table of Contents
 	sys/index
 	interviews/index   
 	behave
-	studytips   
 	deepdives
 	rtfm
-	kurzgesagt
 	readlist
