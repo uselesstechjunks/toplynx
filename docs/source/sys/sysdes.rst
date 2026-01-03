@@ -76,9 +76,9 @@ LLM Systems
 - https://www.systemdesignhandbook.com/guides/llm-system-design/
 - https://www.linkedin.com/posts/hoang-van-hao_25-llms-system-design-interview-questions-activity-7396785599728422913-NXbn
 
-===============================================================================
+*******************************************************************************
 Interview Resources
-===============================================================================
+*******************************************************************************
 - [hellointerview.com] `Learn System Design in a Hurry <https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction>`_
 - [interviewing.io] `12 fundamental (technical) system design concepts <https://interviewing.io/guides/system-design-interview/part-two#12-fundamental-technical-system-design-concepts>`_
 - [linkedin] https://www.linkedin.com/posts/bastyajayshenoy_google-amazon-meta-all-want-ml-system-activity-7397976890612961281-WGYy?rcm=ACoAAARRsNsBS0nkhGM_ofPjXrSrx2KAhC69cdU
