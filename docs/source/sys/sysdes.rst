@@ -7,7 +7,7 @@ Resources
 - [seangoedecke.com] `Everything I know about good system design <https://www.seangoedecke.com/good-system-design/>`_
 
 *******************************************************************************
-Systems
+Product Systems
 *******************************************************************************
 Domain / Data Model
 ===============================================================================
@@ -68,7 +68,13 @@ Control Plane
 
   - Ch.1 Reliable, Scalable, Maintainable Apps; 
   - Ch.8 Trouble with Distributed Systems; 
-  - Ch.9 Consistency & Consensus (coordination). 
+  - Ch.9 Consistency & Consensus (coordination).
+
+*******************************************************************************
+LLM Systems
+*******************************************************************************
+- https://www.systemdesignhandbook.com/guides/llm-system-design/
+- https://www.linkedin.com/posts/hoang-van-hao_25-llms-system-design-interview-questions-activity-7396785599728422913-NXbn
 
 ===============================================================================
 Interview Resources
