@@ -5,6 +5,7 @@ Designing Systems
 Resources
 *******************************************************************************
 - [seangoedecke.com] `Everything I know about good system design <https://www.seangoedecke.com/good-system-design/>`_
+- https://layrs.me/practice
 
 *******************************************************************************
 Product Systems
