@@ -53,7 +53,6 @@ Table of Contents
 .. toctree::
 	:maxdepth: 1
 
-	math/index
 	dsa/index
 	ml/index
 	dl/index
