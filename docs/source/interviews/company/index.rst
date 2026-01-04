@@ -44,4 +44,5 @@ Tier 3 Companies (Well-funded startups or specialized domains):
 	goog
 	meesho
 	meta
+	mistral
 	netapp
