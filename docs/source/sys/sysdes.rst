@@ -76,6 +76,10 @@ LLM Systems
 *******************************************************************************
 - https://www.systemdesignhandbook.com/guides/llm-system-design/
 - https://www.linkedin.com/posts/hoang-van-hao_25-llms-system-design-interview-questions-activity-7396785599728422913-NXbn
+- https://github.com/Devinterview-io/llms-interview-questions
+- https://bhavishyapandit9.substack.com/p/want-to-build-an-llm-system-heres
+- https://murraycole.com/posts/llm-system-design
+- https://github.com/iptracej-education/llm-knowledge-patterns
 
 *******************************************************************************
 Interview Resources
