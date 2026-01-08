@@ -1,4 +1,4 @@
-MLT
+Machine Learning Theory
 #######################################################################
 
 Theory and foundations of ML models, objectives, and training dynamics.

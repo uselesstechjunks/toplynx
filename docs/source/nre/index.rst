@@ -1,4 +1,4 @@
-NRE
+Non-Research Topics
 #######################################################################
 
 Non-research curiosity and personal learning resources.

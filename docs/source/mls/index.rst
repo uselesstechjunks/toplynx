@@ -1,4 +1,4 @@
-MLS
+Machine Learning Systems
 #######################################################################
 
 ML systems stack for efficient training and inference at scale.

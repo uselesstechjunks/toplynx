@@ -1,4 +1,4 @@
-CODE
+Coding
 #######################################################################
 
 Implementation craft: algorithms, coding practice, and performance programming.

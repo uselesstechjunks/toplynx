@@ -1,4 +1,4 @@
-AML
+Applied Machine Learning
 #######################################################################
 
 Designing ML solutions for domains: requirements, supervision, modeling, evaluation.

@@ -1,4 +1,4 @@
-RE
+Exploratory
 #######################################################################
 
 Exploratory research ideas and experiments.

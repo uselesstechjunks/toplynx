@@ -1,4 +1,4 @@
-GEN
+General Skills
 #######################################################################
 
 General thinking and communication skills for effectiveness.
