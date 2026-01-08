@@ -53,10 +53,11 @@ Table of Contents
 .. toctree::
 	:maxdepth: 1
 
-	aml/index
+	code/index	
 	mlt/index
 	mls/index
+	aml/index
 	psd/index
-	code/index
 	gen/index
 	nre/index
+	
