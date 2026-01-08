@@ -53,14 +53,11 @@ Table of Contents
 .. toctree::
 	:maxdepth: 1
 
-	dsa/index
-	ml/index
-	dl/index
-	rl/index
-	applied/index
-	sys/index
-	interviews/index   
-	behave
-	deepdives
-	rtfm
-	readlist
+	code/index	
+	mlt/index
+	mls/index
+	aml/index
+	psd/index
+	gen/index
+	nre/index
+	
