@@ -59,11 +59,7 @@ Sequence Modeling
 RNN
 =========================================================================================
 .. seealso::
-	.. collapse:: Expand Code
-
-	   .. literalinclude:: ../../../code/code/rnn.py
-	      :language: python
-	      :linenos:
+	Implementation examples live in :doc:`/code/language-modeling-impls`.
 
 .. note::
 	* `On the diffculty of training Recurrent Neural Networks <https://arxiv.org/abs/1211.5063>`_
@@ -73,11 +69,7 @@ RNN
 LSTM
 =========================================================================================
 .. seealso::
-	.. collapse:: Expand Code
-
-	   .. literalinclude:: ../../../code/code/lstm.py
-	      :language: python
-	      :linenos:
+	Implementation examples live in :doc:`/code/language-modeling-impls`.
 
 .. note::
 	* `StatQuest on LSTM <https://www.youtube.com/watch?v=YCzL96nL7j0>`_
@@ -113,85 +105,15 @@ Attention
 Understanding Einsum
 -----------------------------------------------------------------------------------------
 .. warning::
-	.. collapse:: Expand Code
-	
-	   .. literalinclude:: ../../../code/code/einsum.py
-	      :language: python
-	      :linenos:
+	Implementation examples live in :doc:`/code/language-modeling-impls`.
 
 .. note::
-	* Dot product Attention (single query)
-
-		.. collapse:: Expand Code
-
-		   .. literalinclude:: ../../../code/code/attn.py
-		      :language: python
-		      :linenos:
-
-	* Multi-head Attention (single query)
-
-		.. collapse:: Expand Code
-
-		   .. literalinclude:: ../../../code/code/mha.py
-		      :language: python
-		      :linenos:
-
-	* Multi-head Attention (sequential query)
-
-		.. collapse:: Expand Code
-
-		   .. literalinclude:: ../../../code/code/mha_seq.py
-		      :language: python
-		      :linenos:
-
-	* Masked Multi-head Attention (parallel query)
-
-		.. collapse:: Expand Code
-
-		   .. literalinclude:: ../../../code/code/mha_par.py
-		      :language: python
-		      :linenos:
-
-	* Masked Multi-head Attention Batched (parallel query)
-
-		.. collapse:: Expand Code
-
-		   .. literalinclude:: ../../../code/code/mha_par_batched.py
-		      :language: python
-		      :linenos:
-
-	* Multi-head Attention Batched (sequential query)
-
-		.. collapse:: Expand Code
-
-		   .. literalinclude:: ../../../code/code/mha_seq_batched.py
-		      :language: python
-		      :linenos:
-
-	* Masked Multi-query Attention Batched (parallel query)
-
-		.. collapse:: Expand Code
-
-		   .. literalinclude:: ../../../code/code/mqa_par_batched.py
-		      :language: python
-		      :linenos:
-
-	* Multi-query Attention Batched (sequential query)
-
-		.. collapse:: Expand Code
-
-		   .. literalinclude:: ../../../code/code/mqa_seq_batched.py
-		      :language: python
-		      :linenos:
+	* Attention implementation examples live in :doc:`/code/language-modeling-impls`.
 
 UnitTest
 -----------------------------------------------------------------------------------------
 .. seealso::
-	.. collapse:: UnitTest of implementation
-
-	   .. literalinclude:: ../../../code/code/attn_test.py
-	      :language: python
-	      :linenos:
+	Unit tests live in :doc:`/code/language-modeling-impls`.
 
 Resources
 -----------------------------------------------------------------------------------------

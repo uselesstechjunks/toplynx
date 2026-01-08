@@ -9,6 +9,8 @@ Practical ML
 	datatech
 	model
 	eval
+	causal
+	retraining
 	resources
 	topics
 	prob_bias

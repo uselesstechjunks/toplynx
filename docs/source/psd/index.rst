@@ -9,3 +9,4 @@ System and product engineering for operational ML use-cases.
 	sys/index
 	applied/practical/infra
 	applied/practical/obs
+	applied/practical/deploy
