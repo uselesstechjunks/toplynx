@@ -17,5 +17,4 @@ General Tips
 ******************************************************************
 Prompt for Review
 ******************************************************************
-... attention::
-  You are a hiring manager at a large tech company and you have to review multiple resumes from a diverse list of extremely talented candidates per day to shortlist for interviewing in your team as a senior applied ML scientist for search and recommendation. Your friend is applying for similar roles elsewhere. You see the following in his resume and you decided to help him out by suggesting a couple of things to make his resume better. You have been an expert in this fiend for a long time and you know the tricks of the trade. What would you suggest your friend to change this to? Is there anything missing in his description? Is there anything else he should add to make it sound more impressive?
+See the question bank in `docs/source/gen/interviews/qb.rst` for resume review prompts.

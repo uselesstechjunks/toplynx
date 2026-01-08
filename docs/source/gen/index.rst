@@ -7,4 +7,3 @@ General thinking and communication skills for effectiveness.
 	:maxdepth: 2
 
 	interviews/index
-	behave

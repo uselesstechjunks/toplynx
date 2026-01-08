@@ -48,3 +48,38 @@ R - The tangible / quantifiable RESULTS of the situation: How did it help the te
 - How well do you communicate with teams? 
 - What about cross-functional partners? 
 - How do you tailor your communications based on the work and/or the audience?
+
+##############################################################################
+Leadership and Values
+##############################################################################
+1. **Ethical Considerations**:
+   - Fairness, accountability, transparency, and privacy.
+   - Bias identification and mitigation in models.
+
+2. **Software Engineering Practices**:
+   - Version control, code review, automated testing, deployment.
+   - Reproducibility, scalability, and maintainability of ML systems.
+
+3. **Domain Knowledge**:
+   - Domain constraints and problem framing.
+   - Translating domain knowledge into modeling choices.
+
+4. **Communication Skills**:
+   - Explaining technical concepts to non-technical stakeholders.
+   - Clear written and verbal communication.
+
+5. **Continuous Learning and Professional Development**:
+   - Ongoing learning habits and staying current with research.
+   - Engagement in communities, conferences, or open-source.
+
+6. **Team Collaboration and Leadership**:
+   - Cross-functional collaboration and mentorship.
+   - Leading teams and building alignment.
+
+7. **Problem-Solving Skills**:
+   - Structured reasoning on complex problems.
+   - Trade-offs and solution design under constraints.
+
+8. **Cultural Fit and Motivation**:
+   - Alignment with company values and mission.
+   - Motivation and potential impact on the team.

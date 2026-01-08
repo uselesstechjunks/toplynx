@@ -3,12 +3,12 @@ ML Interviews
 #######################################################################
 
 .. toctree::
-	:maxdepth: 3
+	:maxdepth: 1
 
 	resume
 	breadth
 	qb
 	depth
 	design
-	leadership
+	behave
 	company/index

@@ -26,8 +26,8 @@ Basic Structure
 
 	- Abstraction: Think about the observed data as :math:`X` and the target as :math:`Y` (can be :math:`X` itself).
 
-		* Does 'X' have structure (sequence: language, timeseries; locality: image, graph) or is it unstructured (can be shuffled)?
-		* Are there latent variables :math:`Z`?
+		* Identify whether :math:`X` has structure (sequence, locality) or is unstructured.
+		* Identify latent variables :math:`Z` if present.
 	- Mapping: Identify ML paradigms. If you can't map to of any, create a new ML paradigm for it!
 * Scale Identification:
 
@@ -64,36 +64,16 @@ Machine Learning Design (ML Model Design)
 ********************************************************************************
 - Scope: Focuses on designing the core machine learning model for a specific task.
 - ML Design questions are common in research-focused or model-building roles.
-- Key Questions
-
-	- What type of model should we use (e.g., linear regression, decision trees, deep learning, transformer-based models, etc.)?
-	- What features should we select or engineer?
-	- What kind of loss function should we optimize?
-	- How do we handle data preprocessing (e.g., normalization, missing values, imbalanced data)?
-	- What metrics should we optimize (e.g., accuracy, precision, recall, NDCG)?
-	- How do we train and fine-tune the model (hyperparameter tuning, regularization)?
-	- How do we validate and evaluate the model (cross-validation, test splits, A/B testing)?
-	- How do we deal with biases, fairness, and explainability in the model?
+Key question prompts live in `docs/source/gen/interviews/qb.rst`.
 
 ********************************************************************************
 Machine Learning System Design (MLSD)
 ********************************************************************************
 - Scope: Focuses on building the entire system around the ML model, ensuring it runs efficiently at scale in production.
 - ML System Design questions are crucial for senior ML engineers, applied scientists, and ML architects who work on large-scale ML deployments.
-- Key Questions
-
-	- How do we serve the model in production (batch vs. real-time inference)?
-	- How do we scale the system (distributed training, model sharding, caching, retrieval optimizations)?
-	- What infrastructure should we use (on-prem vs. cloud, GPU vs. CPU deployment)?
-	- How do we handle data pipelines (streaming vs. batch processing, feature stores)?
-	- How do we handle model updates (versioning, retraining, continuous learning)?
-	- How do we ensure low-latency and high-availability (caching strategies, model distillation, quantization)?
-	- How do we monitor model performance and drift in production?
-	- How do we handle logging, debugging, and failure recovery?
-	- How do we ensure security, compliance, and privacy (differential privacy, federated learning)?
 - Expectations
 
-	- Define the problem clearly (e.g., how does TikTok rank videos?).
+	- Define the problem clearly (e.g., how TikTok ranks videos).
 	- Break down the system (retrieval, ranking, re-ranking, personalization).
 	- Discuss infrastructure trade-offs (real-time vs. batch, model updates, caching strategies).
 	- Consider monitoring & reliability (A/B testing, detecting drift, rollback strategies).
@@ -107,67 +87,12 @@ Machine Learning System Design (MLSD)
 ********************************************************************************
 Study Framework
 ********************************************************************************
-#. ML Science
-
-	#. What signals do I have? 
-	#. What if we have all the data we want - what's the best we can do? Deep dive into approaches.
-	#. What if we have very limited data - what is the best we can do? Deep dive into feature design.
-	#. Which approach should work in theory? Why? Shall we take one approach or a hybrid one? Why?
-	#. What does the loss encourage the model to learn? How to tackle label majority bias? Deep dive into training algorithm. Code.
-
-#. ML Engineering
-
-	#. How much data we need to ensure that model learned something? 
-	#. How can we reduce data & compute requirements without hurting the performance much?
-	#. How do I train the models at scale? How much compute, storage & memory would we need? 
-	#. Does the solution scale at serving time? How would serving work in a distributed env within latency limits? How much resource would we need?
-
-#. ML Ops
-
-	#. How do we monitor and adjust to be able to serve the model for a long time? 
-	#. What offline analysis can we do to determine how the model would perform in problematic scenarios?
-
-#. ML Roadmap
-
-	#. Where might this fail? What can we do next to improve the model?
+Question prompts live in `docs/source/gen/interviews/qb.rst`.
 
 ********************************************************************************
 Presentation Framework
 ********************************************************************************
-#. What is the task? 
-
-	.. collapse:: Details
-
-		- Understanding requirements. Split into subtasks if applicable.
-#. What is ideal? What is good enough? How long do I have?
-
-	.. collapse:: Details
-
-		- Business objectives
-#. How do I know if I am getting better?
-
-	.. collapse:: Details
-
-		- Define metrics: primary, secondary
-#. How do I solve it?
-
-	.. collapse:: Details
-
-		- Discuss 3 approaches for solving primary
-		- First 2 options - pros and cons, 1 chosen with better trade-off
-		- Trade off types: (1) Modeling (2) Scaling
-		- Repeat for secondaries if time permits
-#. How do I know how it's doing in practice?
-
-	.. collapse:: Details
-
-		- Discuss observability, maintainibility
-#. How do I improve iteratively?
-
-	.. collapse:: Details
-
-		- Discuss common pitfalls - measure, address.
-#. How do I plan the roadmap?
+Question prompts live in `docs/source/gen/interviews/qb.rst`.
 
 ********************************************************************************
 Resources
@@ -193,7 +118,7 @@ General System Design interview Tips
 #. Start with documenting your summary/overview in Google docs/Excalidraw or Zoom whiteboard. Even if the company hasn’t provided a link and interviewer insists on the conversation to be purely verbal - Document key bullet points. 
 #. Present your interview systematically; lead the conversation and don't wait for the interviewer to ask questions. At the beginning of the interview, present the discussion's structure and ask the interviewer about their main areas of interest. 
 #. Show your understanding of the business implications by sharing insights on metrics. Understand what the product truly expects from you. 
-#. Actively listen to the interviewer. At the start, ask: "What are you primarily looking for?". Address the whole process, from collecting and labeling data to defining metrics. 
+#. Actively listen to the interviewer and ask about their primary focus. Address the whole process, from collecting and labeling data to defining metrics. 
 #. Assess the importance of the modeling process. 
 #. Familiarize yourself with the nuances of ML-Ops, such as: At the start of the interview, get a feel for if the interviewer seems interested in ML-Ops. You'll mostly get a clear signal on whether or not they are interested. 
 
@@ -405,7 +330,4 @@ Policy Enforcement
 ********************************************************************************
 Sample Questions
 ********************************************************************************
-* Design a system for QA where a user would be able to search with a query and the system answers from an internal knowledge-base.
-* What would you do to reduce the latency in the system further?
-* How would you apply a content restriction policy in the system (not all users would be able to search through all the knowledge-base).
-
+Question prompts moved to the question bank in `docs/source/gen/interviews/qb.rst`.
