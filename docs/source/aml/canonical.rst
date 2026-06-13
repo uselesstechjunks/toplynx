@@ -10,7 +10,7 @@ Canonical Micro-problems
 ***************************************************************
 Extractive QA
 ===============================================================
-- We want to build a customer support tool where agents can paste in a long policy document and ask a question — the system should highlight the exact sentence or phrase in the document that answers it
+- We want to build a customer support tool where agents can paste in a long policy document and ask a question - the system should highlight the exact sentence or phrase in the document that answers it
 - BERT + span head (start/end token classification) - SQuAD-style span labels - answer not present in context, requires "no answer" head
 
 Open-domain QA 
@@ -78,7 +78,7 @@ Sparse retrieval
 
 Dense retrieval 
 ===============================================================
-- Our e-commerce site has 50M products. A user types 'something cozy to wear on a winter hike' — match them to relevant products even when none of those words appear in the product title.
+- Our e-commerce site has 50M products. A user types 'something cozy to wear on a winter hike' - match them to relevant products even when none of those words appear in the product title.
 - Bi-encoder (DPR, sentence-BERT) - in-batch negatives on MS-MARCO / NQ - rare term recall; hard negatives needed for quality
 
 Learned sparse retrieval 
@@ -151,12 +151,12 @@ Visual QA
 
 Image-text retrieval / grounding 
 ===============================================================
-- A user types 'minimalist kitchen with marble countertops' into our interior design platform — return the most visually matching photos from our catalog.
+- A user types 'minimalist kitchen with marble countertops' into our interior design platform - return the most visually matching photos from our catalog.
 - CLIP contrastive - (image, alt-text) web pairs - loose pairing; spatial/compositional reasoning fails
 
 Phrase grounding / referring expression 
 ===============================================================
-- In a warehouse robotics system, a human operator says 'pick up the small red box on the left side of the shelf' — the robot must identify the exact object being referred to.
+- In a warehouse robotics system, a human operator says 'pick up the small red box on the left side of the shelf' - the robot must identify the exact object being referred to.
 - MDETR, Grounding DINO - RefCOCO - complex relational expressions ("the leftmost red cup")
 
 Face verification 
@@ -179,7 +179,7 @@ Image-text alignment (document)
 
 Video-text retrieval 
 ===============================================================
-- Our video platform has 100M videos with auto-generated transcripts. A user types 'how to change a bike tire' — surface the most relevant videos and start playback at the relevant segment.
+- Our video platform has 100M videos with auto-generated transcripts. A user types 'how to change a bike tire' - surface the most relevant videos and start playback at the relevant segment.
 - VideoClip, CLIP4Clip - HowTo100M, MSR-VTT - temporal aggregation; which frames matter
 
 Audio-text (speech recognition) 
