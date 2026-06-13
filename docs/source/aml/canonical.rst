@@ -164,3 +164,110 @@ Anomaly detection (visual)
 ===============================================================
 - We run a manufacturing line producing circuit boards. Flag any board coming off the line that has a visual defect, without having labeled examples of every defect type.
 - PatchCore, normalizing flows - only normal images (no anomaly labels needed) - defining "normal" distribution; novel anomaly types
+
+***************************************************************
+4. Multimodal
+***************************************************************
+Image-text alignment (document) 
+===============================================================
+- We're building a search engine over scientific papers. When a user queries 'transformer attention visualization', return not just relevant papers but the specific figures within them that show attention maps, with their associated captions.
+- CLIP + layout proximity score - web-scale (image, alt-text) + structural heuristics - loose web pairs; ebook/PDF layout requires spatial features
+
+Video-text retrieval 
+===============================================================
+- Our video platform has 100M videos with auto-generated transcripts. A user types 'how to change a bike tire' — surface the most relevant videos and start playback at the relevant segment.
+- VideoClip, CLIP4Clip - HowTo100M, MSR-VTT - temporal aggregation; which frames matter
+
+Audio-text (speech recognition) 
+===============================================================
+- We run a call center with 10,000 agents. Transcribe every call in real time so that compliance violations can be flagged and agent coaching can be automated.
+- Whisper (encoder-decoder) - weakly supervised web audio + transcripts - accented speech, overlapping speakers
+
+Speech + NLP (spoken QA) 
+===============================================================
+- Build a voice interface for a car that can answer 'what's the nearest EV charging station with a 150kW charger?' from spoken input alone, without a screen.
+- cascaded ASR → QA or end-to-end - SpokenSQuAD - ASR error propagation into downstream
+
+Multimodal sentiment 
+===============================================================
+- We're building a brand monitoring tool that analyzes video reviews on social media. Given a video, determine overall sentiment accounting for tone of voice, facial expression, and spoken words.
+- Late fusion or cross-attention over text + audio + video - CMU-MOSI, CMU-MOSEI - modality alignment, missing modality at inference
+
+***************************************************************
+5. Graphs & Structured Data
+***************************************************************
+Node classification 
+===============================================================
+- We have a transaction graph where nodes are accounts and edges are transfers. Classify each account as legitimate, suspicious, or fraudulent.
+- GraphSAGE, GCN + softmax - node labels (Cora, citation graphs) - over-smoothing at depth; transductive only
+
+Link prediction 
+===============================================================
+- On a professional networking platform, recommend people a user might know, based on the structure of their mutual connections and shared group memberships.
+- GNN encoder + dot-product decoder - positive/negative edge sampling - negative sampling strategy dominates performance
+
+Graph classification 
+===============================================================
+- Given the molecular graph of a drug candidate, predict whether it will be toxic so we can filter out bad candidates early in the pipeline.
+- GIN, hierarchical pooling - TUD benchmarks - scalability to large graphs
+
+Knowledge graph completion 
+===============================================================
+- Our knowledge graph has entities for companies, people, and products but many relationships are missing. Infer likely missing relationships (e.g. 'person X is likely the CEO of company Y') from existing graph structure.
+- TransE, RotatE, ComplEx - (head, relation, tail) triples - multi-relational reasoning, unseen entities
+
+Tabular classification 
+===============================================================
+- Given a user's historical transaction features, predict whether the next transaction is fraudulent before it is authorized.
+- XGBoost / LightGBM (tree ensemble), TabNet (attention) - structured labels - feature leakage, distribution shift between train/serve
+
+Anomaly detection (tabular) 
+===============================================================
+- We run a cloud infrastructure platform. Given per-machine metrics (CPU, memory, disk I/O, network), flag machines that are behaving anomalously compared to their historical baseline.
+- Isolation Forest, autoencoders, COPOD - unlabeled normal data - defining anomaly in high-dimensional spaces
+
+***************************************************************
+6. Recommender Systems
+***************************************************************
+Collaborative filtering 
+===============================================================
+- On a streaming music platform, surface songs a user is likely to enjoy that they haven't heard before, based purely on listening history patterns across all users.
+- Matrix factorization (ALS), Neural CF - implicit feedback (clicks, purchases) - cold start, popularity bias
+
+Two-tower retrieval 
+===============================================================
+- We have 500M items in our catalog. Given a user's interaction history, retrieve the top 500 candidate items in under 50ms to feed into a downstream ranker.
+- Dual encoder, learned embeddings - in-batch negatives from interaction logs - false negatives in batch; popularity collapse
+
+Session-based recommendation 
+===============================================================
+- A user lands on our e-commerce site and browses 4 items in the first 3 minutes. With no account or history, recommend the next item they're most likely to engage with.
+- GRU4Rec, SASRec (transformer) - next-item prediction from session - short sessions, position bias
+
+Multi-task ranking 
+===============================================================
+- We want to rank the home feed to jointly maximize short-term engagement (clicks, likes) and long-term satisfaction (survey scores, return visits) without sacrificing one entirely for the other.
+- MMOE, PLE - multi-objective labels (click, dwell, share) - task conflict, negative transfer
+
+Bandit / exploration 
+===============================================================
+- We're launching a new content format. We want to learn which users respond well to it as fast as possible, while not degrading overall engagement during the exploration period.
+- LinUCB, Thompson Sampling, contextual bandits - online reward signals - exploration cost in production, delayed rewards
+
+***************************************************************
+7. Sequence & Time Series
+***************************************************************
+Time series forecasting 
+===============================================================
+- We operate a ride-sharing platform. Forecast demand at the city-grid level for the next 4 hours so we can pre-position drivers and offer surge pricing signals.
+- Temporal Fusion Transformer, N-BEATS, PatchTST - univariate/multivariate targets - distribution shift, irregular sampling
+
+Anomaly detection (time series) 
+===============================================================
+- We monitor payment processing infrastructure. Alert on-call engineers when transaction throughput, error rates, or latency deviate from expected patterns, with low false positive rate.
+- LSTM autoencoder, SARIMA residuals, Informer - reconstruction error on normal windows - threshold sensitivity, seasonality confusion
+
+Event sequence modeling 
+===============================================================
+- Given a user's sequence of in-app actions (viewed product → added to cart → abandoned → returned next day), predict the probability they will convert in the next 24 hours.
+- Temporal point processes (Neural Hawkes), Transformer on event logs - timestamped event sequences - irregular intervals, long-horizon dependencies
