@@ -101,3 +101,66 @@ Learned index / ANN
 ===============================================================
 - We have 1B product embeddings that need to be searched in under 20ms at query time. Design the indexing and retrieval infrastructure.
 - FAISS (IVF, HNSW), ScaNN - embedding quality upstream - recall-latency tradeoff; HNSW strong on recall, IVF better on memory
+
+***************************************************************
+3. Computer Vision
+***************************************************************
+Image classification 
+===============================================================
+- We run an online marketplace for secondhand goods. When a seller uploads a photo, automatically categorize the item into our product taxonomy so it appears in the right browse category.
+- ResNet / ViT + softmax - ImageNet labels - long tail, fine-grained distinctions
+
+Object detection 
+===============================================================
+- We're building a retail shelf monitoring system. Given a photo of a store shelf, identify which products are present, their positions, and whether any slots are empty.
+- DETR, Faster R-CNN - COCO bounding box labels - small object detection, dense scenes
+
+Semantic segmentation 
+===============================================================
+- We're building an autonomous vehicle perception system. Given a dashcam frame, label every pixel as road, pedestrian, vehicle, or obstacle.
+- SegFormer, Mask2Former - pixel-level labels (Cityscapes, ADE20K) - label cost is extreme; boundary ambiguity
+
+Instance segmentation 
+===============================================================
+- For a fashion try-on app, given a photo of a person, precisely cut out individual clothing items so they can be replaced with items from our catalog.
+- Mask R-CNN, SAM - COCO instance masks - occlusion, overlapping instances
+
+Optical character recognition (OCR) 
+===============================================================
+- We process millions of scanned invoices from vendors. Extract the invoice number, line items, and total amount so they can be ingested into our accounting system
+- CNN encoder + CTC / attention decoder - synthetic + real text pairs - arbitrary fonts, low resolution, curved text
+
+Document layout analysis 
+===============================================================
+- We're digitizing a large archive of academic papers. Given a scanned PDF, identify which regions are body text, which are figures, which are tables, and which are captions.
+- LayoutLM, DiT - PubLayNet, FUNSD - mixed layout (tables inside prose), multi-column
+
+Image captioning 
+===============================================================
+- We're building an accessibility feature for a social platform. Automatically generate alt text for user-uploaded images so screen readers can describe them.
+- CNN encoder + transformer decoder (BLIP) - COCO captions - hallucination of objects not in image
+
+Visual QA 
+===============================================================
+- Build a feature for a home improvement app where a user can photograph a room and ask 'what style is this?' or 'does this furniture match?'
+- ViLBERT, BLIP-2, LLaVA - VQA v2, GQA - language bias (models answer from prior without looking)
+
+Image-text retrieval / grounding 
+===============================================================
+- A user types 'minimalist kitchen with marble countertops' into our interior design platform — return the most visually matching photos from our catalog.
+- CLIP contrastive - (image, alt-text) web pairs - loose pairing; spatial/compositional reasoning fails
+
+Phrase grounding / referring expression 
+===============================================================
+- In a warehouse robotics system, a human operator says 'pick up the small red box on the left side of the shelf' — the robot must identify the exact object being referred to.
+- MDETR, Grounding DINO - RefCOCO - complex relational expressions ("the leftmost red cup")
+
+Face verification 
+===============================================================
+- Build a re-authentication system for a banking app: when a user attempts a high-value transaction, verify that the live selfie matches the ID photo on file.
+- ArcFace / CosFace (margin-based softmax) - labeled identity pairs - demographic bias, pose/lighting variation
+
+Anomaly detection (visual) 
+===============================================================
+- We run a manufacturing line producing circuit boards. Flag any board coming off the line that has a visual defect, without having labeled examples of every defect type.
+- PatchCore, normalizing flows - only normal images (no anomaly labels needed) - defining "normal" distribution; novel anomaly types
