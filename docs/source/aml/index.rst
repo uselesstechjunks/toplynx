@@ -6,7 +6,9 @@ Designing ML solutions for domains: requirements, supervision, modeling, evaluat
 .. toctree::
 	:maxdepth: 2
 
+	canonical
 	practical/index
 	methods/index
-	problem
+	preparation
+	problems
 	e2e/index
