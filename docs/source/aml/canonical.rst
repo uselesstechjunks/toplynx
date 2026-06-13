@@ -2,7 +2,7 @@
 Canonical Micro-problems
 ######################################################
 ***************************************************************
-Natural Language Processing
+1. Natural Language Processing
 ***************************************************************
 Extractive QA
 ===============================================================
@@ -63,3 +63,41 @@ Text generation / controlled generation
 ===============================================================
 - Given a product's structured spec sheet (dimensions, material, price), generate a compelling marketing description in the brand's tone of voice
 - GPT-style decoder, CTRL - LM pretraining + RLHF - repetition, degeneration, constraint satisfaction
+
+***************************************************************
+2. Information Retrieval
+***************************************************************
+Sparse retrieval 
+===============================================================
+- Build a search bar for an internal HR portal. Employees type queries like 'parental leave policy UK' and expect the most relevant policy document to surface at the top.
+- BM25 - TF-IDF statistics, no training - vocabulary mismatch, acronyms, synonyms
+
+Dense retrieval 
+===============================================================
+- Our e-commerce site has 50M products. A user types 'something cozy to wear on a winter hike' — match them to relevant products even when none of those words appear in the product title.
+- Bi-encoder (DPR, sentence-BERT) - in-batch negatives on MS-MARCO / NQ - rare term recall; hard negatives needed for quality
+
+Learned sparse retrieval 
+===============================================================
+- We need retrieval that handles both exact keyword matching (SKU numbers, product codes) and semantic matching (synonyms, paraphrases) in the same system.
+- SPLADE - distillation from cross-encoder - slower than BM25, complex training
+
+Hybrid retrieval 
+===============================================================
+- Build a search system for a legal research platform where users sometimes search by citation ('Section 12(b) of the Securities Exchange Act') and sometimes by concept ('insider trading safe harbor').
+- BM25 + dense, score fusion (RRF or learned) - combined supervision - interpolation weight is domain-sensitive
+
+Cross-encoder reranking 
+===============================================================
+- Our first-stage retrieval returns 100 candidates. Build a second-stage model that reorders them to maximize the chance the top result is the one the user clicks.
+- BERT cross-encoder, MonoT5 - pointwise or pairwise MS-MARCO labels - latency; can only run on top-k from first stage
+
+Query understanding / expansion 
+===============================================================
+- Users on our medical platform often use lay terms like 'heart attack' instead of clinical terms like 'myocardial infarction'. Improve retrieval by reformulating queries before they hit the index.
+- T5 for query rewriting, docT5query for document expansion - weak supervision from click logs - expansion can introduce noise
+
+Learned index / ANN 
+===============================================================
+- We have 1B product embeddings that need to be searched in under 20ms at query time. Design the indexing and retrieval infrastructure.
+- FAISS (IVF, HNSW), ScaNN - embedding quality upstream - recall-latency tradeoff; HNSW strong on recall, IVF better on memory
