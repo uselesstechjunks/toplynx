@@ -8,5 +8,6 @@ Designing ML solutions for domains: requirements, supervision, modeling, evaluat
 
 	practical/index
 	methods/index
-	problem
+	preparation
+	problems
 	e2e/index
